@@ -16,17 +16,16 @@ purge
 ban
 mute
 unmute
-warn
         `)
         .addField("Fun Commands", 
 `joke
-dogfact
+dogfact/df
 dog
 roll
 rps
 cat
 flip
-catfact
+catfact/cf
 bird`)
         .addField("Misc Commands", 
 `avatar
