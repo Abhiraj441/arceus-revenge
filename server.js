@@ -199,8 +199,7 @@ client.on("ready", ready => {
         `${config.prefix}help`,
         `Members of Arceus's Revenge`,
         `${client.users.size} users!`,
-        `Made with ❤ ️by [Elite]-Bots`,
-        `Hosted by Aragon`
+        `Made with ❤ ️by BotSpark`
       ];
       client.user.setPresence({ 
        game: { name: gamePresence[i%gamePresence.length],
