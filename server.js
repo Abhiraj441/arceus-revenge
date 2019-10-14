@@ -3,7 +3,7 @@ if(!config.token)throw new Error("You forgot to add a token")
 const Discord = require('discord.js')
 const fs = require('fs')
 const client = new Discord.Client()
-client.login(config.token)
+client.login(process.env.BOT_TOKEN)
 const prefix = config.prefix
 
 client.commands = new Discord.Collection();
