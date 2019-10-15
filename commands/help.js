@@ -22,7 +22,7 @@ unmute
 dogfact/df
 dog
 roll
-rps/RockPaperScissor
+rps
 cat
 flip
 catfact/cf
