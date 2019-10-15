@@ -12,7 +12,7 @@ const { Client, RichEmbed } = require('discord.js');
             let rollembed = new RichEmbed()
         .setColor("#15f153")
         .setImage(doRandHT())
-        .setFooter(`If you want your dog to be here send its image to Elite Gamer#6179, message failed to send then send friend request then send it.`)
+        .setFooter(`If you want your bird to be here send its image to Elite Gamer#6179, message failed to send then send friend request then send it.`)
         message.channel.send(rollembed);   
     }
         
