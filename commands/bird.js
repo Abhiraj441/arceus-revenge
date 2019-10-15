@@ -4,7 +4,7 @@ const { Client, RichEmbed } = require('discord.js');
         name:'dog',
         run: (client, message, args) => {
             function doRandHT() {
-                var rand = [`https://random.birb.pw/img/S2pqj.jpg`,`https://random.birb.pw/img/rvv5l.jpg`,`https://random.birb.pw/img/3q221.png`,`https://random.birb.pw/img/3Mkdf.jpg`,https://random.birb.pw/img/t89l7.jpg`,`https://random.birb.pw/img/z0oqr.jpg`,`https://random.birb.pw/img/OjseH.jpg`,`https://random.birb.pw/img/CeE9j.jpg`,`https://random.birb.pw/img/MT1Sm.jpg`,`https://random.birb.pw/img/badfa.jpg`,`https://random.birb.pw/img/18ttm.png`];
+                var rand = [`https://random.birb.pw/img/S2pqj.jpg`,`https://random.birb.pw/img/rvv5l.jpg`,`https://random.birb.pw/img/3q221.png`,`https://random.birb.pw/img/3Mkdf.jpg`,`https://random.birb.pw/img/t89l7.jpg`,`https://random.birb.pw/img/z0oqr.jpg`,`https://random.birb.pw/img/OjseH.jpg`,`https://random.birb.pw/img/CeE9j.jpg`,`https://random.birb.pw/img/MT1Sm.jpg`,`https://random.birb.pw/img/badfa.jpg`,`https://random.birb.pw/img/18ttm.png`];
                 
                 return rand[Math.floor(Math.random()*rand.length)];
                 }
