@@ -160,25 +160,20 @@ client.on('message', async message => {
 });
 //Prefix End
 client.loadCommands = () => {
-    fs.readdir('./commands/', (err, files) => {
-        if (err) console.error(err);
+  fs.readdir('./commands/', (err, files) => {
+    if (err) console.error(err);
 
-        let jsFiles = files.filter(f => f.split('.').pop() === 'js');
+    let jsFiles = files.filter(f => f.split('.').pop() === 'js');
 
-        console.log(`LOG Loading a total of ${jsFiles.length} commands.`);
+    console.log(`LOG Loading a total of ${jsFiles.length} commands.`);
 
-        jsFiles.forEach((f, i) => {
-            delete require.cache[require.resolve(`./commands/${ f }`)];
-            let props = require(`./commands/${ f }`);
-            client.commands.set(f, props);
-            client.cmdhelp.set(props.help.name, props.help);
-        });
+    jsFiles.forEach((f, i) => {
+      delete require.cache[require.resolve(`./commands/${ f }`)];
+      let props = require(`./commands/${ f }`);
+      //console.log("LOG Loading command: " + f);
+      client.commands.set(f, props);
     });
-    fs.readdirSync('./logging/').forEach(f => {
-        delete require.cache[require.resolve(`./logging/${ f }`)];
-        let props = require(`./logging/${ f }`);
-        client.logging.set(f, props);
-    });
+  });
 };
 
 client.loadCommands();
