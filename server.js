@@ -8,7 +8,6 @@ const prefix = config.prefix
 
 client.commands = new Discord.Collection();
 client.cmdhelp = new Discord.Collection();
-client.logging = new discord.Collection();
 
 //Prefix 
 
