@@ -213,3 +213,29 @@ client.on("ready", ready => {
       i++;
     },7500);
 })
+// Logging //
+client.on('messageDelete', async message => {
+    let log = client.logging.get('messageDelete' + ".js");
+    log(message, client);
+});
+client.on("messageDeleteBulk", async function(messages){
+    let log = client.logging.get('messageDeleteBulk' + ".js");
+    log(messages, client);
+});
+  client.on("emojiCreate", async function(emoji){
+    let log = client.logging.get('emojiCreate' + ".js");
+    log(emoji, client);
+});
+client.on("emojiDelete", async function(emoji){
+    let log = client.logging.get('emojiDelete' + ".js");
+    log(emoji, client);
+}); 
+
+client.on("guildBanAdd", async function(guild, user){
+    let log = client.logging.get('guildBanAdd' + ".js");
+    log(guild, user, client);
+});
+client.on("guildBanRemove", async function(guild, user){
+    let log = client.logging.get('guildBanRemove' + ".js");
+    log(guild, user, client);
+});
