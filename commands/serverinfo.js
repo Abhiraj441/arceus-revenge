@@ -4,7 +4,7 @@ const config = require("../config.json");
 module.exports.run = async (client, message, args, prefix) => {   
 let sicon = message.guild.iconURL;
             var serverinfo = new discord.RichEmbed()
-            .setTitle(`Displaying stats for ${message.guild.name}`)
+            .addField("Server Name" , `${message.guild.name}`)
             .addField("Owner", message.guild.owner, true)
             .addField("guild created", message.guild.createdAt)
             .addField("You joined at", message.member.joinedAt)
