@@ -1,7 +1,8 @@
 const { Client, RichEmbed } = require('discord.js');
-var userCount = guild.memberCount;
-var humanCount = guild.members.filter(member => !member.user.bot).size;
-var botCount = guild.members.filter(member => !member.user.human).size;
+const guild = bot.guilds.get('627839622197805056');
+const userCount = guild.memberCount;
+const humanCount = guild.members.filter(member => !member.user.bot).size;
+const botCount = guild.members.filter(member => !member.user.human).size;
     module.exports = {
         name:'membrcount',
         run: (client, message, args) => {
