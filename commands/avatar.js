@@ -8,7 +8,7 @@ const { Client, RichEmbed } = require('discord.js');
 
         let rollembed = new RichEmbed()
 const user = message.mentions.users.first() || message.author;
-        .setColor("#15f153")
+        .setColor(RANDOM)
 
         .setImage(message.user.avatarURL);
 
