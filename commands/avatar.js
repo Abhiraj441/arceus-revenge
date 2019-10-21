@@ -6,12 +6,14 @@ const { Client, RichEmbed } = require('discord.js');
 
         run: (client, message, args) => {
 
-       const user = message.mentions.users.first() || message.author;
-    const avatarEmbed = new Discord.RichEmbed()
+        let rollembed = new RichEmbed()
+const user = message.mentions.users.first() || message.author;
         .setColor("#15f153")
-        .setAuthor(user.username)
-        .setImage(user.avatarURL);
-    message.channel.send(avatarEmbed);
-}
+
+        .setImage(message.author.avatarURL);
+
+        message.channel.send(rollembed);
 
         }
+
+    }
