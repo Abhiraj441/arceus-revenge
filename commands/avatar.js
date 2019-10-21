@@ -10,7 +10,7 @@ const { Client, RichEmbed } = require('discord.js');
 const user = message.mentions.users.first() || message.author;
         .setColor("#15f153")
 
-        .setImage(message.author.avatarURL);
+        .setImage(message.user.avatarURL);
 
         message.channel.send(rollembed);
 
