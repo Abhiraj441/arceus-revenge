@@ -1,29 +1,17 @@
 const { Client, RichEmbed } = require('discord.js');
 
-function doRandHT() {
-
-    var rand = ['HEADS!','TAILS!'];
-
-    
-
-    return rand[Math.floor(Math.random()*rand.length)];
-}
-
-
     module.exports = {
 
         name:'avatar',
 
         run: (client, message, args) => {
 
-        let rollembed = new RichEmbed()
-
+       const user = message.mentions.users.first() || message.author;
+    const avatarEmbed = new Discord.RichEmbed()
         .setColor("#15f153")
-
-        .setImage(message.author.avatarURL);
-
-        message.channel.send(rollembed);
+        .setAuthor(user.username)
+        .setImage(user.avatarURL);
+    message.channel.send(avatarEmbed);
+}
 
         }
-
-    }
