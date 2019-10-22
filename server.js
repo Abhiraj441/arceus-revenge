@@ -22,33 +22,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
   //commands
-if (command === "avatar") {
 
-      if (!message.mentions.users.size) {
-
-        const avatarAuthor = new Discord.RichEmbed()
-
-      .setColor(0x333333)
-
-      .setAuthor(message.author.username)
-
-      .setImage(message.author.avatarURL)
-
-        message.channel.send(avatarAuthor);
-
-        let mention = message.mentions.members.first();
-
-        const avatarMention = new Discord.RichEmbed()
-
-        .setColor(0x333333)
-
-        .setAuthor(mention.user.username)
-
-        .setImage(mention.user.avatarURL)
-
-        message.channel.send(avatarMention);
-
-}
   if(command === "announce") {
     if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
     return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
