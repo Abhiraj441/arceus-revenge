@@ -28,8 +28,7 @@ flip
 catfact/cf
 bird`)
         .addField("Misc Commands", 
-`avatar
-membercount
+`membercount
 serverinfo`)
         message.channel.send(rollembed);   
     }
