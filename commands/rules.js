@@ -19,9 +19,9 @@ const { Client, RichEmbed } = require('discord.js');
  10. Anyone found with multiple accounts will get all the alternative, as well as the original account, banned.
  11. Do not cause arguments
  12. Breaking the rules as a joke will still result in a punishment.`)
-     .addField("__Staff Rules__", `
-     1. All staff have to warn users only, other actions will be taken by @┋!┋MEE6 
-     2. All staff has to use @┋!┋MEE6 as moderation bot.`)
+     .addField("__Staff Rules__", 
+   `1. All staff have to warn users only, other actions will be taken by <@159985870458322944>
+    2. All staff has to use <@159985870458322944> as moderation bot.`)
      .addField("__Have you ready this channel?__", `React with :white_check_mark:, if yes`)
      .setFooter("Rules will update in future so keep checking this channel for it")
         message.channel.send(rollembed);   
