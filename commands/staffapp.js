@@ -8,7 +8,9 @@ const { Client, RichEmbed } = require('discord.js');
         .addField("Q. I am Interested in being a staff here.", 
         `
         A. type **/register** in # and answer all questions truthfully
-        __Staff Application__
+
+        **__Staff Application__**
+
         1. Type your User-name with your tag, For Example: Wampus#1313
         2. What's your age?
         3. In which country do you live and which language do you prefer?
