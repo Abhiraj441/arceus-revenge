@@ -13,17 +13,17 @@ AR Membership is a Membership for this server which grants you some special feat
 
      :bell: Custom Role! (Hoised/Seprated)
 
-     :bell:629341447048396849> Private Channel! (Includes all Bots & Add Upto 50 People)
+     :bell: Private Channel! (Includes all Bots & Add Upto 50 People)
      
-     :bell:629341447048396849> 3 Invites Per Invite Contest!
+     :bell: 3 Invites Per Invite Contest!
      
-     :bell:629341447048396849> Sniping Pass! 
+     :bell: Sniping Pass! 
      
-     :bell:629341447048396849> 50% Off in <#630721093463834624> Can use on 5 Items per month
+     :bell: 50% Off in <#630721093463834624> Can use on 5 Items per month
      
-     :bell:629341447048396849> Membership Special Weekly Giveaways!
+     :bell: Membership Special Weekly Giveaways!
      
-     :bell:629341447048396849> Participate in Giveaways Without Meeting Req. (Except Giveaways Held By RAOG Not)
+     :bell: Participate in Giveaways Without Meeting Req. (Except Giveaways Held By RAOG Not)
      `)
      .addField(":dollar:__Cost:__:dollar:", 
 `<:approved:636130484019134464> 50k for Monthly Membership!
