@@ -203,7 +203,7 @@ client.on("ready", ready => {
       ];
       client.user.setPresence({ 
        game: { name: gamePresence[i%gamePresence.length],
-        type: 1} });
+        type: 2} });
       i++;
     },7500);
 })
