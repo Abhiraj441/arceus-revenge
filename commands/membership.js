@@ -5,25 +5,25 @@ const { Client, RichEmbed } = require('discord.js');
         run: (client, message, args) => {
             let rollembed = new RichEmbed()
         .setColor("#15f153")
-        .setAuthor("<:arceus:636130354851217440>Arceus's Revenge's Membership<:arceus:636130354851217440>")
-        .addField(":crown:__What is AR Membership?__<a:think_polygon:586023644740845598>", 
+        .setAuthor("Arceus's Revenge's Membership")
+        .addField(":crown:__What is AR Membership?__:thinking:", 
         `
-AR Membership is a Membership for this server which grants you some special features more than normal users for Monthly/Lifetime!<a:Rainbow_Hyper_Tada:622335807113396225>`)
+AR Membership is a Membership for this server which grants you some special features more than normal users for Monthly/Lifetime!:tada:`)
      .addField("<:down_arrow:637934706855378944>__Benefits:__<:down_arrow:637934706855378944>", `
 
-     <a:bellcc:629341447048396849> Custom Role! (Hoised/Seprated)
+     :bell: Custom Role! (Hoised/Seprated)
 
-     <a:bellcc:629341447048396849> Private Channel! (Includes all Bots & Add Upto 50 People)
+     :bell:629341447048396849> Private Channel! (Includes all Bots & Add Upto 50 People)
      
-     <a:bellcc:629341447048396849> 3 Invites Per Invite Contest!
+     :bell:629341447048396849> 3 Invites Per Invite Contest!
      
-     <a:bellcc:629341447048396849> Sniping Pass! 
+     :bell:629341447048396849> Sniping Pass! 
      
-     <a:bellcc:629341447048396849> 50% Off in <#630721093463834624> Can use on 5 Items per month
+     :bell:629341447048396849> 50% Off in <#630721093463834624> Can use on 5 Items per month
      
-     <a:bellcc:629341447048396849> Membership Special Weekly Giveaways!
+     :bell:629341447048396849> Membership Special Weekly Giveaways!
      
-     <a:bellcc:629341447048396849> Participate in Giveaways Without Meeting Req. (Except Giveaways Held By RAOG Not)
+     :bell:629341447048396849> Participate in Giveaways Without Meeting Req. (Except Giveaways Held By RAOG Not)
      `)
      .addField(":dollar:__Cost:__:dollar:", 
 `<:approved:636130484019134464> 50k for Monthly Membership!
