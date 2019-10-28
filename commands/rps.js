@@ -5,7 +5,7 @@ const { Client, RichEmbed } = require('discord.js');
         run: (client, message, args) => {
             let rps = ["scissors", "paper", "rock"];
             let i;
-            if(!rps.includes(args[0])) return message.reply("Please choose rock, paper or scissor.");
+            if(!rps.includes(args[0])) return message.reply("Please choose rock, paper or scissors.");
             if(args[0].includes("rock")) {
             i = 2;
             }
