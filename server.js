@@ -24,16 +24,16 @@ client.on("message", async message => {
   //commands
 
   if(command === "announce") {
-    if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-    return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+    if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+    return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
   let announcement = args.slice(0).join(" ");
   message.delete().catch(O_o=>{}); 
   message.channel.send(announcement)
 }
 
 if(command === "role_add") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
 if(!member)
   return message.reply(`**Mention a valid member**`);
@@ -46,8 +46,8 @@ message.channel.send(`<@${member.user.id}> has been given **${rolename}** role`)
 }
 
 if(command === "mute") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
 if(!member)
   return message.reply(`**Mention a valid member**`);
@@ -58,8 +58,8 @@ message.channel.send(`<@${member.user.id}> is muted now`);
 }
 
 if(command === "unmute") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
 if(!member)
   return message.reply(`**Mention a valid member**`);
@@ -70,8 +70,8 @@ message.channel.send(`<@${member.user.id}> has been unmuted`);
 }
 
 if(command === "warn") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
 if(!member)
   return message.reply(`**Mention a valid member**`);
@@ -81,8 +81,8 @@ if(!reason) reason = "No reason provided";
 }
 
 if(command === "role_remove") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
 if(!member)
   return message.reply(`**Mention a valid member**`);
@@ -95,8 +95,8 @@ message.channel.send(`**${rolename}** role has been taken from <@${member.user.i
 }
 
 if(command === "purge") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
 
 const deleteCount = parseInt(args[0], 10);
 
@@ -109,8 +109,8 @@ message.channel.bulkDelete(fetched)
 }
 
 if(command === "kick") {
-  if(!message.member.roles.some(r=>["◆━━━◇Trial Mod◇━━━◆"].includes(r.name)) )
-  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Trial Mod◇━━━◆` role.");
+  if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+  return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
  
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
   if(!member)
@@ -129,8 +129,8 @@ if(command === "kick") {
       }
 
 if(command === "ban") {
-if(!message.member.roles.some(r=>["◆━━━◇Moderator◇━━━◆"].includes(r.name)) )
-return message.reply("Sorry, you don't have permissions to use this! Make sure u have `◆━━━◇Moderator◇━━━◆` role.");
+if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
+return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
             
 let member = message.mentions.members.first();
 if(!member)
@@ -197,7 +197,7 @@ client.on("ready", ready => {
     timer = client.setInterval(function () {
       var gamePresence = [
         `${config.prefix}help`,
-        `Members of Arceus's Revenge`,
+        `Members of Pokémon Kingdom`,
         `${client.users.size} users!`,
         `Made with ❤ ️by BotSpark`
       ];
