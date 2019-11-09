@@ -24,8 +24,13 @@ client.on("message", async message => {
   //commands
 
   if(command === "announce") {
-    if(!message.member.roles.some(r=>["Bot Commander"].includes(r.name)) )
-    return message.reply("Sorry, you don't have permissions to use this! Make sure u have `Bot Commander` role.");
+    if (!message.member.hasPermissions("KICK")) {
+
+     message.reply("You need kick permission to use this command")
+
+}
+
+;
   let announcement = args.slice(0).join(" ");
   message.delete().catch(O_o=>{}); 
   message.channel.send(announcement)
