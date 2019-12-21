@@ -202,9 +202,8 @@ client.on("ready", ready => {
     timer = client.setInterval(function () {
       var gamePresence = [
         `${config.prefix}help`,
-        `Members of Pokémon Kingdom`,
-        `${client.users.size} users!`,
-        `Made with ❤ ️by BotSpark`
+        `Members of Arceus's Revenge`,
+        `with ${client.users.size} users!`,
       ];
       client.user.setPresence({ 
        game: { name: gamePresence[i%gamePresence.length],
