@@ -17,7 +17,7 @@ const { Client, RichEmbed } = require('discord.js');
   if (!banchannel) return console.error("Channel does not exist!");
         let rollembed = new RichEmbed()
         .setColor("#15f153")
-        .setAuthor("Event Ban Registered")
+        .setAuthor("Giveaway Ban Registered")
         .addField("Author:", `${author}`, true)
         .addField('User:', `${User}`, true)
         .addField('Time Period:', `${TimePeriod}`)
