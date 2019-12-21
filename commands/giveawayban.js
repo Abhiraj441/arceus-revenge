@@ -4,6 +4,9 @@ const { Client, RichEmbed } = require('discord.js');
     module.exports = {
         name:'eventban',
         run: (client, message, args) => {
+            if (!message.member.hasPermissions("KICK")) {
+     message.reply("You need kick permission to use this command")
+}
         let author = message.author.username
         let User = message.mentions.members.first() || message.guild.members.get(args[0]);
         if(!User)
