@@ -1,5 +1,4 @@
 const config = require("./config.json");
-if(!config.token)throw new Error("You forgot to add a token")
 const Discord = require('discord.js')
 const fs = require('fs')
 const client = new Discord.Client()
