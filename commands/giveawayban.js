@@ -10,7 +10,7 @@ const { Client, RichEmbed } = require('discord.js');
         let author = message.author.username
         let User = message.mentions.members.first() || message.guild.members.get(args[0]);
         if(!User)
-        return message.reply(`Correct Usage: **a!eventban <@user> <time> <reason>**`);
+        return message.reply(`Correct Usage: **a!giveawayban <@user> <time> <reason>**`);
         let TimePeriod = args[1]
         if(!TimePeriod)
         return message.reply(`Mention Time Period like **1D | 1W | Permanent***`)
