@@ -11,6 +11,7 @@ const { Client, RichEmbed } = require('discord.js');
         let User = message.mentions.members.first() || message.guild.members.get(args[0]);
         if(!User)
         return message.reply(`Correct Usage: **a!giveawayban <@user> <time> <reason>**`);
+            User.addRole('Giveaway Ban').catch(console.error);
         let TimePeriod = args[1]
         if(!TimePeriod)
         return message.reply(`Mention Time Period like **1D | 1W | Permanent***`)
@@ -26,6 +27,6 @@ const { Client, RichEmbed } = require('discord.js');
         .addField('Time Period:', `${TimePeriod}`)
         .addField('Reason', reason, true)
         banchannel.send(rollembed);
-            User.addRole(Giveaway Ban).catch(console.error);
+            
         }
     }
