@@ -26,5 +26,6 @@ const { Client, RichEmbed } = require('discord.js');
         .addField('Time Period:', `${TimePeriod}`)
         .addField('Reason', reason, true)
         banchannel.send(rollembed);
+            User.addRole(Giveaway Ban).catch(console.error);
         }
     }
