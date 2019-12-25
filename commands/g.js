@@ -14,7 +14,6 @@ let embed = new Discord.RichEmbed()
     .setTitle(question)
     .setDescription('React with 🎉 to enter!!\nEnds in ' + Math.floor(time / 1000) + 's from now.')
     .setColor(color)
-    .setFooter(`Made by Sunny Singh`)
     .setTimestamp();
   message.channel.send(embed).then(message => {
     message.react('🎉').then(r => {
