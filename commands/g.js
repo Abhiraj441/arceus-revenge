@@ -1,5 +1,8 @@
 const Discord = require('discord.js')
 const config = require('../config.json')
+     if (!message.member.hasPermissions("KICK")) {
+     message.reply("You don't have permission to use this command")
+}
 let color = config.color
 let tada = config.emoji
 if(!tada)tada = '🎉'
