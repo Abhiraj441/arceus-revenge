@@ -10,7 +10,7 @@ client.cmdhelp = new Discord.Collection();
 
 //Prefix 
 
-client.on("message", async message => {
+client.on("message", async message => {  
   if(message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
@@ -18,7 +18,7 @@ client.on("message", async message => {
   
   //commands
 
-  if(command === "announce") {
+if(command === "say") {
     if (!message.member.hasPermissions("KICK")) {
      message.reply("You need kick permission to use this command")
 };
@@ -27,6 +27,44 @@ client.on("message", async message => {
   message.channel.send(announcement)
 }
 
+if(command === "esay"){
+if(!message.member.hasPermissions("KICK")){
+message.reply("You need kick permission to use this command")
+};
+  let title = args.slice(0);
+  let description = args.slice(1).join(" ");
+  message.delete().catch(O_o=>{}); 
+  const embed = {
+    "title": `${title}`,
+    "description": `${description}`,
+    "color": "#25c059",
+    };
+    message.channel.send({ embed });
+}
+if(command === "gymlog"){
+  if(!message.member.hasRoles("")){
+    message.reply("You need to be a gym leader to use this command")
+  }
+  let challenger = message.mentions.members.first() || message.guild.members.get(args[0]);
+if(!challenger)
+  return message.reply(`Mention the challenger /n Correct Usage: **a!gymlog <@user> <Leader/Challenger> <None/Badge> <Bo3/Bo2/Bo1/...> <Score>** /n Like: **a!gymlog <@${Message.author.id}> Leader None Bo3 3-0**`)
+  let gym = message.channel
+  let winner = message.args.slice(1);
+  let reward = message.args.slice(2);
+  let battle = message.args.slice(3);
+  let score = message.args.slice(4);
+let logchan = message.guild.channels.find(c => c.name === `❰🏆❱➤gym-logs`);
+const embed = {
+  "description": `
+Challenger: ${challenger}
+Winner: ${winner}
+Battle Format: ${battle}
+Gym: ${gym}
+Final Score: ${score}
+Reward: ${reward}`
+}
+message.logchan.send({ embed })
+}
 if(command === "role_add") {
     if (!message.member.hasPermissions("KICK")) {
         message.reply("You need kick permission to use this command")
@@ -167,7 +205,7 @@ client.loadCommands();
 
 client.on('message', async message => {
   if(!message.content.toLowerCase().startsWith(prefix)) return
-    if(!message.guild.me.hasPermission("SEND_MESSAGES")) return
+    if(!message.guild.me.hasPermissions("SEND_MESSAGES")) return
   
     var args = message.content.slice(prefix.length).trim().split(/ +/g);
     var command = args.shift().toLowerCase();
