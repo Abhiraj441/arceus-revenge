@@ -6,7 +6,8 @@ const { Client, RichEmbed } = require('discord.js');
         let rollembed = new RichEmbed()
         .setColor("#15f153")
         .addField("Manager Commands",
-`announce
+`say
+esay
 role_add
 role_remove
 purge
