@@ -223,7 +223,7 @@ client.on("ready", ready => {
     timer = client.setInterval(function () {
       var gamePresence = [
         `${config.prefix}help`,
-        `Members of Arceus's Revenge`,
+        `Members of PokeKingdom`,
         `with ${client.users.size} users!`,
       ];
       client.user.setPresence({ 
